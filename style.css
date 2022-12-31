@@ -5,11 +5,11 @@
 }
 
 :root {
-  --color-primary: #fb7413;
-  --color-gray-l: #959eac;
-  --color-gray-m: #7c8798;
-  --color-blue-m: #252d37;
-  --color-blue-d: #121417;
+  --color-primary: hsl(25, 97%, 53%);
+  --color-gray-l: hsl(217, 12%, 63%);
+  --color-gray-m: hsl(216, 12%, 54%);
+  --color-blue-m: hsl(213, 20%, 18%);
+  --color-blue-d: hsl(216, 12%, 8%);
 }
 
 html {
@@ -94,6 +94,11 @@ button {
   transform: translate(0.2rem, 0.2rem);
 }
 
+.btn:hover {
+  color: var(--color-primary);
+  background-color: #fff;
+}
+
 .icon-star {
   width: 4rem;
   height: 4rem;
@@ -153,4 +158,10 @@ button {
 }
 .attribution a {
   color: #3e52a3;
+}
+
+@media (max-width: 34em) {
+  .container {
+    width: 90%;
+  }
 }
