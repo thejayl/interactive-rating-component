@@ -4,9 +4,14 @@ const submitBtn = document.querySelector('.btn');
 const sectionRating = document.querySelector('.section-rating');
 const sectionState = document.querySelector('.section-state');
 const numberList = document.querySelector('.number-list');
+const allNumbers = document.querySelectorAll('.number');
 const ratingNum = document.querySelector('.rating-number');
 
 numberList.addEventListener('click', e => {
+  for (const num of allNumbers) {
+    num.classList.remove('active');
+  }
+
   e.target.classList.add('active');
 });
 
